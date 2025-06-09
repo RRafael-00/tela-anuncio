@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .inicio{
+            width: 100%;
+            height: 100px;
+            float: left;
+            background-color: #101010;
+        }
+
+        .logo{
+            width: auto;
+            height: 100px;
+            float: left;
+            margin-left: 100px;
+            
+    
+        }
+        .nomes{
+            width: 70%;
+            height: 30px;
+            float: left;
+            background-color: #101010;
+            margin-top: 35px;
+        }
+        
+        .nomes span{
+            font-size: 22.5px;
+            color: #ffffff;
+            margin-left: 130px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .personagens{
+            width: 100%;
+            height: 700px;
+            float: left;
+        }
+
+        .p1{
+            width: auto;
+            height: 700px;
+            background-image: url(personagens.jpg);
+        }
+
+        .opacidade{
+            width: 100%;
+            height: 700px;
+            opacity: 0.3;
+            background-color: #101010;
+        }
+
+        .q1{
+            width: 100%;
+            height: 420px;
+            float: left;
+            background-color: #101010;
+        }
+
+        .q2{
+            width: 90%;
+            height: 350px;
+            margin-top: 25px;
+            float: left;
+            margin-left: 5%;
+            border-radius: 10px;
+            background-color: rgb(71, 71, 71);
+        }
+
+        .t1{
+            width: 29.5%;
+            height: 100%;
+            float: left;
+            border-radius: 10px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .shelby{
+            width: auto;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .t2{
+            width: 65%;
+            height: 100%;
+            border-radius: 10px;
+            margin-left: 40px;
+            float: left;
+        }
+
+        .titulo{
+            text-align: center;
+            font-size: 30px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: antiquewhite;
+        }
+
+        .sub{
+            text-align: justify;
+            color: black;
+            font-size: 18px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .t3{
+            width: 70%;
+            height: 100%;
+            float: left;
+            margin-left: 40px;
+        }
+
+        .t4{
+            width: auto;
+            float: left;
+            height: 100%;
+            margin-left: 45px;
+        }
+        .specter{
+            width: auto;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .r1{
+            width: 100%;
+            height: 650px;
+            float: left;
+            background-color: #101010;
+            
+        }
+
+        .r2{
+            width: auto;
+            height: 650px;
+            background-image: url(one.avif);
+          
+        }
+
+        .opc{
+            background-color: #101010;
+            width: 100%;
+            height: 650px;
+            opacity: 0.9;
+        }
+
+        .f1{
+            font-size: 60px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            color: rgb(218, 218, 218);
+            padding-top: 250px;
+        }
+
+        .avt{
+            font-size: 120px;
+            text-align: center;
+            color: #ffffff;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .b1{
+            width: 100%;
+            height: 800px;
+            float: left;
+            background-color: #272727;
+        }
+        .b2{
+            width: 100%;
+            height: 350px;
+            float: left;
+            background-color: #272727;
+        }
+
+        .b3{
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 80px;
+            height: 350px;
+            float: left;
+            background-color: #5f5f5f;
+        }
+
+        .b3 img{
+            width: auto;
+            height: 400px;
+        }
+
+        .b1 h3{
+            font-size: 35px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .im1{
+            width: 25%;
+            height: 300px;
+            float: left;
+            margin-left: 3%;
+            background-color: #272727;
+        }
+
+        .im1 img{
+            width: auto;
+            height: 300px;
+            padding-left: 50px;
+        }
+
+        .b4{
+            width: 60%;
+            height: 100%;
+            float: left;
+            margin-left: 20%;
+            background-color: #5f5f5f;
+        }
+
+        .b4 img{
+            width: auto;
+            height: 100%;
+            float: left;
+        }
+
+        .c1{
+            width: 100%;
+            height: 600px;
+            float: left;
+            background-image: url('xxx.jpg');
+        }
+
+        .opa{
+            width: 100%;
+            height: 100%;
+            float: left;
+            opacity: 0.9;
+            background-color: #000000;
+        }
+
+        .c2{
+            width: 40%;
+            height: 600px;
+            float: left;
+        }
+
+        .c2 img{
+            width: auto;
+            height: 550px;
+            padding-top: 40px;
+        }
+
+        .c3{
+            width: 60%;
+            height: 100%;
+            float: left;
+        }
+
+        #nome{
+            width: 50%;
+            margin-left: 100px;
+            height: 60px;
+            font-size: 25px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border: none;
+            color: #101010;
+            background-color: white;
+            border-radius: 5px;
+            margin-top: 20%;
+        }
+
+        .formulario{
+            width: 50%;
+            margin-left: 100px;
+            height: 60px;
+            font-size: 25px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border: none;
+            color: #101010;
+            background-color: white;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .c3 button{
+            width: 30%;
+            border: none;
+            background-color: #ff0000;
+            height: 60px;
+            font-size: 25px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #ffffff;
+            margin-top: 20px;
+            border-radius: 5px;
+            margin-left: 180px;
+        }
+
+        .v1{
+            width: 100%;
+            height: 700px;
+            float: left;
+            background-color: #101010;
+        }
+
+        .v2{
+            width: 100%;
+            height: 300px;
+            margin-top: 25px;
+            float: left;
+            background-color: #101010;
+            }
+
+        .videos{
+            width: 35%;
+            height: 300px;
+            margin-left: 8.5%;
+            float: left;
+            border-radius: 10px;
+        }
+
+        .videos iframe{
+            border-radius: 10px;                   
+        }
+
+        .rr{
+            width: 100%;
+            height: 60px;
+            float: left;
+            background-color: #5f5f5f;
+        }
+
+        .rr h3{
+            font-size: 25px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            font-weight: bold;
+            color: #101010;
+            margin-top: 17.5px;
+            text-transform: uppercase;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="inicio">
+        <img src="logo.png" class="logo">
+        <div class="nomes">
+            <span>HOME</span>
+            <span>SOBRE</span>
+            <span>GALERIA</span>
+            <span>FALE CONOSCO</span>
+        </div>
+    </div>
+
+    <div class="personagens">
+        <div class="p1">
+            <div class="opacidade"></div>
+        </div>
+    </div>
+    <div class="q1">
+        <div class="q2">
+            <div class="t1">
+                <img src="thomas.jpg" class="shelby">
+            </div>
+            <div class="t2">
+                <h3 class="titulo">THOMAS SHELBY</h3>
+                <p class="sub">Thomas Michael Shelby é um personagem fictício e o principal protagonista do drama criminal do período britânico Peaky Blinders. Ele é interpretado pelo ator irlandês Cillian Murphy, que ganhou o Irish Film & Television Award e o National Television Award por sua interpretação de Shelby.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="q1">
+        <div class="q2">
+            <div class="t3">
+                <h3 class="titulo">Harvey Specter</h3>
+                <p class="sub">Harvey começou sua carreira como promotor do Ministério Público de Nova York. Depois de se destacar na função, ele decidiu mudar de ares e ingressar no competitivo mundo dos advogados corporativos.Não demorou muito para que se tornasse sócio sênior na renomada empresa Pearson Hardman em 2011. Mas sua fama explodiu mesmo quando ele fez uma contratação que desafiou todas as regras.</p>
+            </div>
+            <div class="t4">
+                <img src="harvey_specter.jpg" class="specter">
+            </div>
+        </div>
+    </div>
+
+    <div class="r1">
+        <div class="r2">
+            <div class="opc">
+                <div class="f1">Está pronto para essa grande</div>
+                <div class="avt">Aventura?</div>  
+        </div>
+    </div>
+    
+    <div class="b1">
+        <div class="b2">
+            <h3>PERSONAGENS</h3>
+            <div class="im1">
+                <img src="luffy.png">
+            </div>
+            <div class="im1">
+                <img src="naruto.avif">
+            </div>
+            <div class="im1">
+                <img src="Minato.PNG">
+            </div>
+        </div>
+        
+        <div class="b3">
+            <div class="b4">
+                <img src="kakashi.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="c1">
+        <div class="opa">
+            <div class="c2">
+                <img src="ha.png">
+            </div>
+            <div class="c3">
+                <form action="#" method="POST">
+                    <input type="text"
+                           id="nome"
+                           name="nome"
+                           placeholder="Nome"
+                           required>
+                    
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           class="formulario"
+                           placeholder="Email"
+                           required>
+                    
+                    <input type="number"
+                           id="zap"
+                           name="zap"
+                           class="formulario"
+                           placeholder="WhatsApp"
+                           required>      
+                    
+                    <button>Enviar</button>
+                           
+                </form>
+            </div>
+        </div>
+          
+    </div>
+
+    <div class="v1">
+        <div class="v2">
+            <div class="videos">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/svmIUWMVo2Y?si=PmFKPcTWU-e9EbX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>       
+            </div>
+            <div class="videos">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Ab2YIbP5xw8?si=ShJGYOEH5ojm_Vgw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="v2">
+            <div class="videos">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/iS5xXr-GOnM?si=y-EePKwlqMfbISMX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>       
+            </div>
+            <div class="videos">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/b9EkMc79ZSU?si=n6Cykvxh7R6VCUGt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="rr"><h3>Desenvolvido por: Raimundo Rafael</h3></div>
+
+
+</body>
+</html>
